@@ -1,0 +1,11 @@
+button{
+    background-color: #ccc;
+    padding: 5px;
+    transition: .3s;
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    background-color: salmon;
+}
