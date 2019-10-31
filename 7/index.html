@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel=stylesheet type="text/css" href="css.css">
+    <title>Vue.js 7</title>
+</head>
+<body>
+    <p>Vue.js 7</p>
+    <div id="app">
+        <div v-if="role == 'admin' || role == 'super_admin'">
+            hi, admin.
+        </div>
+        <div v-else-if="role == 'hr'">
+                hi, HR.
+        </div>
+        <div v-else>
+            request forbidden.
+        </div>
+    </div>
+
+
+
+
+    <script src="../lib/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
