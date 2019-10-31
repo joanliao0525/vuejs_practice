@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel=stylesheet type="text/css" href="css.css">
+    <title>Vue.js 3</title>
+    <style>
+        .active{
+            background: #333;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <p>Vue.js 3</p>
+    <!-- 'v-bind:' 可省略成 ':' -->
+    <div id="app">
+        <a :class="{active: isActive}" :href="url">
+            Click
+            <!-- active 吃不到外部檔 -->
+            <!-- <img :src="img" alt="link"> -->
+        </a>
+    </div>
+
+
+
+
+    <script src="../lib/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
