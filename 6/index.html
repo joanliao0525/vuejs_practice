@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel=stylesheet type="text/css" href="css.css">
+    <title>Vue.js 6</title>
+</head>
+<body>
+    <p>Vue.js 6</p>
+    <div id="app">
+        <!-- v-model 可以在 input:text & textarea & select 三種標籤中使用 -->
+        <!--單選 <label>
+            男
+            <input v-model="gender" value="male" type="radio">
+        </label>
+        <label>
+            女
+            <input v-model="gender" value="female" type="radio">
+        </label>
+        <br>
+        {{gender}} -->
+
+        <!--多選 <label>
+            男
+            <input v-model="gender" value="male" type="checkbox">
+        </label>
+        <label>
+            女
+            <input v-model="gender" value="female" type="checkbox">
+        </label>
+        <br>
+        {{gender}} -->
+
+        <!-- <textarea v-model="article" ></textarea>
+        <br>
+        {{article}} -->
+
+        <div>Where did you come from?</div>
+        <select v-model="where">
+            <option value="1">Taiwan</option>
+            <option value="2">Japan</option>
+        </select>
+        {{where}}
+
+        <div>Where are you goning?</div>
+        <select v-model="dest" multiple>
+            <option value="1">Taiwan</option>
+            <option value="2">Japan</option>
+        </select>
+        {{dest}}
+
+
+    </div>
+
+
+
+
+    <script src="../lib/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
